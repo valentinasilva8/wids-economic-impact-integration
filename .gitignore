@@ -80,8 +80,9 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Data files (uncomment if you want to exclude large datasets)
-# *.csv
+# Data files - exclude large datasets
+datasets/fire_perimeters_gis_fireperimeter*.csv
+datasets/geo_events_geoevent*.csv
 # *.json
 # *.parquet
 
