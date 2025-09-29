@@ -1,0 +1,191 @@
+/* Dark Theme CSS for Economic Impact Integration PDF */
+
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.4;
+    margin: 0;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #4a9eff;
+    padding-bottom: 15px;
+}
+
+h2 {
+    color: #4a9eff;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-left: 3px solid #4a9eff;
+    padding-left: 10px;
+}
+
+h3 {
+    color: #66d9ef;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: #a6e22e;
+    font-size: 1.0em;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 1.0em;
+}
+
+ul, ol {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+    font-size: 1.0em;
+}
+
+code {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.9em;
+}
+
+pre {
+    background-color: #2d2d2d;
+    border: 1px solid #404040;
+    border-radius: 6px;
+    padding: 12px;
+    margin: 15px 0;
+    overflow-x: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    color: #f8f8f2;
+    font-size: 0.85em;
+    line-height: 1.3;
+}
+
+/* Syntax highlighting for code blocks */
+.hljs-comment {
+    color: #75715e;
+    font-style: italic;
+}
+
+.hljs-string {
+    color: #e6db74;
+}
+
+.hljs-keyword {
+    color: #66d9ef;
+    font-weight: bold;
+}
+
+.hljs-function {
+    color: #a6e22e;
+}
+
+.hljs-variable {
+    color: #f8f8f2;
+}
+
+.hljs-number {
+    color: #ae81ff;
+}
+
+/* Highlight boxes for important content */
+.highlight-box {
+    background-color: #2a4a3a;
+    border-left: 4px solid #4a9eff;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 15px 0;
+    background-color: #2d2d2d;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    border: 1px solid #404040;
+    padding: 8px 10px;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+th {
+    background-color: #4a9eff;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #3a3a3a;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4px solid #4a9eff;
+    background-color: #2a2a2a;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+}
+
+/* Links */
+a {
+    color: #4a9eff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #66d9ef;
+    text-decoration: underline;
+}
+
+/* Page breaks for PDF */
+@media print {
+    body {
+        padding: 20px;
+    }
+    
+    h1, h2, h3, h4 {
+        page-break-after: avoid;
+    }
+    
+    pre, table, blockquote {
+        page-break-inside: avoid;
+    }
+}
