@@ -1,110 +1,50 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# Virtual environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-.python-version
-
-# pipenv
-Pipfile.lock
-
-# PEP 582
-__pypackages__/
-
-# Celery
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
-
-# Data files - exclude large datasets
+# Large dataset files (too big for GitHub)
+datasets/evac_zones_gis_evaczone*.csv
 datasets/fire_perimeters_gis_fireperimeter*.csv
 datasets/geo_events_geoevent*.csv
-# *.json
-# *.parquet
 
-# IDE
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
 
-# OS
+# OS files
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
 
-# Logs
-*.log
+# Large files
+*.pdf
+*.zip
+*.tar.gz
 
-# Temporary files
-*.tmp
-*.temp
+# HTML exports (can be regenerated)
+*.html
+
+# Economic metric folder (separate project)
+economic metric/
+
+# Sebastian's approach folder (separate project)
+sebastian's approach/
+
+# Test files
+test_*.py
+
+# Example files
+example_usage.py
+
+# Config files (may contain sensitive info)
+perimeter_evac_config.py
+optimized_perimeter_evac_integration.py
