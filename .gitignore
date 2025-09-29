@@ -1,50 +1,14 @@
-# Large dataset files (too big for GitHub)
-datasets/evac_zones_gis_evaczone*.csv
-datasets/fire_perimeters_gis_fireperimeter*.csv
-datasets/geo_events_geoevent*.csv
+# Only keep these files on GitHub:
+# - PERIMETER_EVAC_INTEGRATION_README.md
+# - Perimeter_Evacuation_Zone_Integration_Notebook.ipynb  
+# - perimeter_evac_matches/
 
-# Python cache files
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
+# Ignore everything else
+*
 
-# Virtual environment
-.venv/
-venv/
-env/
-
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Large files
-*.pdf
-*.zip
-*.tar.gz
-
-# HTML exports (can be regenerated)
-*.html
-
-# Economic metric folder (separate project)
-economic metric/
-
-# Sebastian's approach folder (separate project)
-sebastian's approach/
-
-# Test files
-test_*.py
-
-# Example files
-example_usage.py
-
-# Config files (may contain sensitive info)
-perimeter_evac_config.py
-optimized_perimeter_evac_integration.py
+# But allow the specific files we want
+!PERIMETER_EVAC_INTEGRATION_README.md
+!Perimeter_Evacuation_Zone_Integration_Notebook.ipynb
+!perimeter_evac_matches/
+!perimeter_evac_matches/**
+!.gitignore
